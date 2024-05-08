@@ -388,7 +388,13 @@ ul {
   margin: 0;
   padding: 0;
 }
+li {
+  line-height: 2.5em;
+}
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+}
+*{
+  box-sizing: border-box;
 }

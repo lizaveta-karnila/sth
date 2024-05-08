@@ -1,3 +1,10 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5em;
+}
+
 .hidden {
   display: none;
 }
@@ -74,11 +81,11 @@
   background-color: white;
 }
 
-.submenu-item:hover .submenu-item__img{
+.submenu-item:hover .submenu-item__img {
   background-color: #601414;
 }
 
-.submenu-item:hover .submenu-item__title{
+.submenu-item:hover .submenu-item__title {
   color: #601414;
 }
 
@@ -166,4 +173,112 @@
   color: #fff;
   max-width: 130px;
   text-align: center;
+}
+
+
+.container {
+  max-width: 1400px;
+  padding: 0, 15px;
+  margin: 0 auto;
+}
+
+.office-info-section {
+  margin: 15px;
+  padding: 50px 0;
+  display: flex;
+  background: #f7f7f7;
+  width: 100%;
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.leftcol {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 140px;
+}
+
+.office-info__title {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.office-info__par {
+  margin: 16px 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone {
+  color: #601414;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+.velcom::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 6%;
+  background: url(../assets/vel.png) right no-repeat;
+  display: block;
+  width: 25px;
+  height: 20px;
+}
+
+.mts::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 6%;
+  background: url(../assets/mts.png) right no-repeat;
+  display: block;
+  width: 25px;
+  height: 20px;
+}
+
+.faxlabel {
+  position: absolute;
+  bottom: 5%;
+  left: 102%;
+  font-size: 0.656em;
+  line-height: 1em;
+  padding: 5px;
+}
+
+.rightcol {
+  padding: 15px;
+  flex-basis: 50%;
+  position: relative;
+}
+
+.navilinck {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 10px;
+  width: 300px;
+  color: #252525;
+  background: #ffcd00;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 30px;
+  left: calc(50% - 150px);
+  z-index: 10;
+  line-height: 1.1em;
+}
+
+.nav-image {
+  max-width: 100%;
+  height: auto;
 }
